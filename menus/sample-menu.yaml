@@ -1,0 +1,45 @@
+---
+1_:     - 1.1:      - _log(1)
+                    - _jump(us-es)
+
+        - 1.2_:     - _log(2)
+                    - 1.2.1:    - 1.2.1.1
+                                - 1.2.1.2
+                                - _hangup()
+                    - 1.2.2:    - 1.2.1.2
+                                - _hangup()
+
+        - 1.3:      - _log(3)
+                    - 1.3.1
+                    - _hangup()
+
+        - 1.4_:     - _log(4)
+                    - 1.4.1.1:   - _set(TELCO=ATT)
+                                 - _answer()
+                    - 1.4.1.2:   - _set(TELCO=Verison)
+                                 - _answer()
+                    - 1.4.1.3:   - _set(TELCO=TMobile)
+                                 - _answer()
+                    - 1.4.1.4:   - _set(TELCO=Metro)
+                                 - _answer()
+                    - 1.4.1.5:   - _set(TELCO=Cricket)
+                                 - _answer()
+                    - 1.4.1.6:   - _set(TELCO=Other)
+                                 - _answer()
+
+        - 1.5_:     - _log(5)
+                    - 1.5.1:    - 1.5.1.1
+                                - 1.5.1.2
+                                - _answer()
+                    - 1.5.2:    - 1.5.1.2
+                                - _answer()
+                    - 1.5.3:    - 1.5.1.2
+                                - _answer()
+
+        - 1.6:      - _log(6)
+                    - 1.6.1
+                    - _answer()
+
+        - 1.7:      - _log(7)
+                    - 1.7.1
+                    - _hangup()
